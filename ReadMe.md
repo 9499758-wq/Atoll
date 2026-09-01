@@ -1,169 +1,94 @@
+<div align="center">
+
 <p align="center">
   <img src=".github/assets/atoll-logo.png" alt="Atoll logo" width="120">
 </p>
-<h1 align="center">Atoll - DynamicIsland for macOS</h1>
-<p align="center">
-<a href="https://trendshift.io/repositories/15291" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15291" alt="Ebullioscopic%2FAtoll | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-</p>
-<p align="center">
-  <a href="https://github.com/Ebullioscopic/Atoll/stargazers">
-    <img src="https://img.shields.io/github/stars/Ebullioscopic/Atoll?style=social" alt="GitHub stars"/>
-  </a>
-  <a href="https://github.com/Ebullioscopic/Atoll/network/members">
-    <img src="https://img.shields.io/github/forks/Ebullioscopic/Atoll?style=social" alt="GitHub forks"/>
-  </a>
-  <a href="https://github.com/Ebullioscopic/Atoll/releases">
-    <img src="https://img.shields.io/github/downloads/Ebullioscopic/Atoll/total?label=Downloads" alt="GitHub downloads"/>
-  </a>
-  <a href="https://discord.gg/PaqFkRTDF8">
-    <img src="https://dcbadge.limes.pink/api/server/https://discord.gg/PaqFkRTDF8?style=flat" alt="Discord server"/>
-  </a>
-</p>
+
+# 🏝️ Atoll - 专为 macOS 打造的原生刘海灵动岛 (二次开发版)
+### *Dynamic Island for macOS — Enhanced Fork & Customization*
+
+**基于开源项目 [Ebullioscopic/Atoll](https://github.com/Ebullioscopic/Atoll) 进行深度二次开发与定制增强**
+
+[![Platform](https://img.shields.io/badge/Platform-macOS%2014.0%2B-black?style=flat-square&logo=apple)](https://github.com/9499758-wq/Atoll)
+[![Language](https://img.shields.io/badge/Swift-5.9%2B-F05138?style=flat-square&logo=swift)](https://github.com/9499758-wq/Atoll)
+[![UI Framework](https://img.shields.io/badge/UI-SwiftUI-007ACC?style=flat-square)](https://github.com/9499758-wq/Atoll)
+[![License](https://img.shields.io/badge/License-GPL--3.0-green.svg?style=flat-square)](LICENSE)
+
+**简体中文说明** · [English Docs](README_EN.md) · [报告问题](https://github.com/9499758-wq/Atoll/issues) · [贡献代码](https://github.com/9499758-wq/Atoll/pulls)
 
 <p align="center">
-  <a href="https://github.com/sponsors/Ebullioscopic">
-    <img src="https://img.shields.io/badge/Sponsor-Ebullioscopic-ff69b4?style=for-the-badge&logo=github" alt="Sponsor Ebullioscopic"/>
-  </a>
-  <a href="https://github.com/Ebullioscopic/Atoll/releases/latest">
-    <img src="https://img.shields.io/badge/Download-Atoll%20for%20macOS-0A84FF?style=for-the-badge&logo=apple" alt="Download Atoll for macOS"/>
-  </a>
-  <a href="https://www.buymeacoffee.com/kryoscopic">
-    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-kryoscopic-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=000000" alt="Buy Me a Coffee for kryoscopic"/>
-  </a>
+  <img src="https://i.postimg.cc/t49mW5yN/Screenshot-2026-03-02-at-6-00-22-PM.png" alt="Atoll 锁屏与灵动岛展示" width="900">
 </p>
 
-<p align="center">
-  <a href="https://discord.gg/PaqFkRTDF8">Join our Discord community</a>
-</p>
-
-Atoll turns the MacBook notch into a focused command surface for media, system insight, and quick utilities. It stays out of the way until needed, then expands with responsive, native SwiftUI animations.
-
-<p align="center">
-  <img src="https://i.postimg.cc/t49mW5yN/Screenshot-2026-03-02-at-6-00-22-PM.png" alt="Atoll lock screen" width="920">
-</p>
-
-
-
-
-
-## Highlights
-- Media controls for Apple Music, Spotify, Cider, and more with inline previews.
-- Live Activities for media playback, Focus, screen recording, privacy indicators, downloads (beta), and battery/charging.
-- Lock screen widgets for media, timers, charging, Bluetooth devices, and weather.
-- Lightweight system insight for CPU, GPU, memory, network, and disk usage.
-- Productivity tools including timers, clipboard history, color picker, and calendar previews.
-- Customization for layouts, animations, hover behavior, and shortcut remapping.
-
-## Other Features
-- Gesture controls for opening/closing the notch and media navigation.
-- Parallax hover interactions with smooth transitions.
-- Lock screen appearance and positioning controls for panels and widgets.
-
-<p align="center">
-  <img src="https://i.postimg.cc/HkLGn6yH/846F86A4_A2F9_4CD6_BC84_1D720D377728_1_201_a.jpg" alt="Atoll preview" width="920">
-</p>
-
-## Requirements
-- macOS 14.0 or later (optimised for macOS 15+).
-- MacBook with a notch (14/16‑inch MBP across Apple silicon generations).
-- Xcode 15+ to build from source.
-- Permissions as needed: Accessibility, Camera, Calendar, Screen Recording, Music.
-
-## Installation
-1) Download the latest DMG [here](https://github.com/Ebullioscopic/Atoll/releases/latest).
-2) Open the DMG and drag Atoll into Applications.
-3) Launch Atoll and grant the requested permissions.
-
-## Quick Start
-- Hover near the notch to expand; click to enter controls.
-- Use tabs for Media, Stats, Timers, Clipboard, and more.
-- Adjust layout, appearance, and shortcuts from Settings.
-- Add files to Shelf from Terminal: `open -a Atoll /path/to/file`.
-
-## Settings
-- Choose appearance, animation style, and per‑feature toggles.
-- Remap global shortcuts and adjust hover behaviour.
-- Enable lock screen widgets and select data sources.
-
-## Gesture Controls
-- Two-finger swipe down to open the notch when hover-to-open is disabled; swipe up to close.
-- Enable horizontal media gestures in **Settings → General → Gesture control** to turn the music pane into a trackpad for previous/next or ±10 second seeks.
-- Pick the gesture skip behaviour (track vs ±10s) independently from the skip button configuration so swipes can scrub while buttons change tracks—or vice versa.
-- Horizontal swipes trigger the same haptics and button animations you see in the notch, keeping visual feedback consistent with tap interactions.
-
-## Troubleshooting (Basics)
-- After granting Accessibility or Screen Recording, quit and relaunch the app.
-- If metrics are empty, enable categories in Settings → Stats.
-- Media not responding: verify player is active and Music permission is granted.
-
-## License
-Atoll is released under the GPL v3 License. Refer to [LICENSE](LICENSE) for the full terms.
-
-## Acknowledgments
-
-Atoll builds upon the work of several open-source projects and draws inspiration from innovative macOS applications:
-
-- [**Boring.Notch**](https://github.com/TheBoredTeam/boring.notch) - foundational codebase that provided the initial media player integration, AirDrop surface implementation, file dock functionality, and calendar event display. Major architectural patterns and notch interaction models were adapted from this project.
-
-- [**Alcove**](https://tryalcove.com) - primary inspiration for the Minimalistic Mode interface design and the conceptual framework for lock screen widget integration that informed Atoll's compact layout strategy.
-
-- [**Stats**](https://github.com/exelban/stats) - source implementation for CPU temperature monitoring via SMC (System Management Controller) access, frequency sampling through IOReport bindings, and per-core CPU utilisation tracking. The system metrics collection architecture derives from Stats project readers.
-
-- [**Open Meteo**](https://open-meteo.com) - weather apis for the lock screen widgets
-
-- [**SkyLightWindow**](https://github.com/Lakr233/SkyLightWindow) - window rendering for Lock Screen Widgets
-
-- [**rtaudio**](https://github.com/ZephyrCodesStuff/rtaudio) - Live music visualizer using C++ was adapted from this project
-
-- [**SwiftTerm**](https://github.com/migueldeicaza/SwiftTerm) - Terminal tab implementation in the standard mode was adapted from this project
-
-- [**DynamicNotch**](https://github.com/jackson-storm/DynamicNotch) - thanks DynamicNotch for letting us use their battery huds
-
-- Wick - Thanks Nate for allowing us to replicate the iOS like Timer design for the Lock Screen Widget
-
-- [**OpenUsage**](https://github.com/robinebers/openusage) - LLM Usage Tracking features
-
-- [**OpenRouter**](https://openrouter.ai) - API for getting automated model pricing
-
-## Contributors
-
-<a href="https://github.com/Ebullioscopic/Atoll/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Ebullioscopic/Atoll" />
-</a>
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Ebullioscopic/Atoll&type=timeline&legend=top-left)](https://www.star-history.com/#Ebullioscopic/Atoll&type=timeline&legend=top-left)
-
-## Updating Existing Clones
-If you previously cloned DynamicIsland, update the remote to track the Atoll repository:
-
-```bash
-git remote set-url origin https://github.com/Ebullioscopic/Atoll.git
-```
-
-A heartfelt thanks to [TheBoredTeam](https://github.com/TheBoredTeam) for being supportive and being totally awesome, Atoll would not have been possible without Boring.Notch
+</div>
 
 ---
 
-<p align="center">
-  <img src=".github/assets/iosdevcentre.jpeg" alt="iOS Development Centre exterior" width="420">
-  <br>
-  <sub>Backed by</sub>
-  <br>
-  <strong>iOS Development Centre</strong>
-  <br>
-  Powered by Apple and Infosys
-  <br>
-  SRM Institute of Science and Technology, Chennai, India
-</p>
+## 🙏 开源致敬与二次开发说明
 
-<p align="center">
-  <a href="https://buymeacoffee.com/kryoscopic">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="200" />
-  </a>
-</p>
+本项目基于原作者 **[Ebullioscopic/Atoll](https://github.com/Ebullioscopic/Atoll)** 的优秀开源成果进行深度二次开发与定制增强。在此由衷致敬并感谢原作者团队在 macOS 灵动岛领域做出的杰出贡献！
 
-<p align="center">
-  Your support helps fund teaching children software development.
-</p>
+### 🌟 本次二次开发增强特色：
+1. **天气预报动效序列优化**：重构并增强了全套 FluentAnim 动效帧序列（含雪花、暴雨、云层、多云太阳等流畅粒子级动效）；
+2. **自动化构建与部署工具**：新增 `deploy-atoll.sh` 及 AppleScript 自动化本地构建、编译与部署流水线；
+3. **跨进程桥接集成**：新增 `AtollBridge`（Python & Swift 跨进程桥接组件），支持外部工具链无感控制灵动岛状态；
+4. **全套简体中文文档与本地化支持**。
+
+---
+
+## 📖 项目简介
+
+**Atoll** 是一款专为搭载刘海屏的 MacBook（以及普通外接显示器）设计的原生 macOS 灵动岛交互工具。
+
+它在平时隐匿于顶部刘海之中，不打扰日常工作；当有媒体播放、定时器运行、充电或硬件状态变动时，它会以丝滑流畅的 **原生 SwiftUI + Metal 动效** 优雅展开，为你提供极致的视效与操作便捷度。
+
+---
+
+## 🌟 核心功能特性
+
+### 1. 🎵 媒体控制与桌面歌词
+* **全平台音乐适配**：深度支持 Apple Music、Spotify、QQ音乐、网易云音乐等主流播放器；
+* **实时歌词与音频动效**：内置 Metal 硬件加速音频可视化频谱，支持悬浮歌词与专辑封面预览；
+* **快捷手势控制**：鼠标悬停展开播放面板，轻扫快速切歌、调整音量。
+
+### 2. ⚡ 灵动岛实时活动 (Live Activities)
+* **动态状态流转**：实时显示媒体播放、专注模式、屏幕录制、下载进度及充电动画；
+* **隐私安全指示器**：麦克风、摄像头调用时即时在灵动岛给出醒目视觉反馈。
+
+### 3. 🔒 锁屏小组件 (Lock Screen Widgets)
+* 在 macOS 锁屏界面提供专属扩展小组件：
+  * 正在播放的音乐与歌词进度；
+  * 蓝牙外设（AirPods / 鼠标 / 键盘）实时电量监控；
+  * 天气预报动效与温湿度详情；
+  * 倒计时与番茄钟提醒。
+
+### 4. 📊 极简系统性能监视器 (System Insights)
+* **轻量级硬件监控**：低开销实时监测 CPU 占用、GPU 负载、内存压力、网络上传/下载速率与磁盘余量。
+
+### 5. 🛠️ 实用生产力工具箱 (Productivity Tools)
+* **番茄钟与定时器**：一键开启专注计时，倒计时结束伴随优雅提示音；
+* **剪贴板历史记录**：快速检索最近复制的文本与代码片段；
+* **屏幕取色器**：快速拾取屏幕像素颜色并转换为 HEX / RGB 格式；
+* **日历与日程预览**：快捷查看近期日程安排。
+
+---
+
+## 🚀 安装与运行
+
+### 方式 1：使用一键自动化部署脚本（推荐）
+```bash
+git clone https://github.com/9499758-wq/Atoll.git
+cd Atoll
+./deploy-atoll.sh
+```
+
+### 方式 2：使用 Xcode 编译源码
+```bash
+open DynamicIsland.xcodeproj
+```
+
+---
+
+## 📄 开源许可证与致谢
+
+本项目基于原作者项目并遵循 [GPL-3.0 License](LICENSE) 开源协议。

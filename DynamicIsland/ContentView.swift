@@ -87,10 +87,9 @@ private struct AtollBridgeClosedLiveActivity: View {
         let parts = title.split(separator: " ")
         if let first = parts.first, !first.contains("°") && !first.contains("℃") {
             let s = String(first)
-            if s.hasPrefix("昆明") { return "昆明" }
-            return s.replacingOccurrences(of: "市", with: "")
+            return s.replacingOccurrences(of: "市", with: "").replacingOccurrences(of: "省", with: "")
         }
-        return "昆明"
+        return ""
     }
 
     private var initials: String {
