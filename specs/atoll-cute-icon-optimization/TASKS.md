@@ -1,0 +1,27 @@
+# Tasks
+
+- [x] Add shared `AtollCuteIcon` renderer.
+- [x] Replace bridge/notch visible SF Symbols with cute icon calls.
+- [x] Reorder bridge cards and clarify bridge logs.
+- [x] Compile bridge script.
+- [x] Build and install Atoll release.
+- [x] Verify screenshot, version, process, and status JSON.
+- [x] Replace stepped Timeline icon motion with smooth state-driven animation.
+- [x] Rebuild, reinstall, and recheck CPU plus screenshot after animation polish.
+- [x] Restore low-power repeating icon motion after one-shot animation regression.
+- [x] Rebuild, reinstall, and recheck CPU plus screenshot after pulse throttling.
+- [x] Stagger icon pulse loops to avoid synchronized SwiftUI redraw spikes.
+- [x] Replace top weather mini rain with Core Animation precipitation motion.
+- [x] Rebuild, reinstall, and verify live rain mini-scene frames.
+- [x] Remove rounded-square plates from shared status/weather/reaction/reminder icons.
+- [x] Redraw stand-up reminder as a readable stretching-person glyph.
+- [x] Rebuild, reinstall, and verify real screenshots plus CPU after frameless icon pass.
+- [x] Redraw drink-water reminder as a readable cup-and-water glyph.
+- [x] Split movement/stand-up reminder glyphs so exercise does not look like an abstract node diagram.
+- [x] Rebuild, reinstall, and verify reminder glyph pass with screenshots plus CPU.
+- [x] Fix mediaremote stderr EOF handler found during CPU verification.
+- [x] Disable Focus/Do Not Disturb defaults, menu entry, settings sections, lock-screen widget, bridge toggle, and notch moon shortcut.
+- [x] Rebuild, reinstall, and verify Focus/Do Not Disturb stays off in preferences and bridge status.
+- [x] Remove remaining visible Chinese Focus/Do Not Disturb wording from app strings and status fallbacks.
+- [x] Rename timer preset fallback and debug status strings away from Focus wording.
+- [x] Rebuild, reinstall, hide macOS Focus menu-bar item, and verify installed Atoll no longer exposes those labels.
