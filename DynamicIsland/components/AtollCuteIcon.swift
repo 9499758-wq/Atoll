@@ -87,17 +87,13 @@ enum AtollCuteIconAssets {
         if s.contains("tornado") { return "tornado" }
 
         // —— 生活与健康系列 ——
-        if s.contains("drop") || s.contains("water") || s.contains("drink") { return "notice-water" }
         if s.contains("cup") || s.contains("coffee") || s.contains("tea") { return "coffee" }
-        if s.contains("walk") || s.contains("run") || s.contains("move") || s.contains("sport") || s.contains("exercise") { return "notice-move" }
-        if s.contains("figure.stand") || s.contains("stand") { return "notice-stand" }
 
         // —— 硬件与电源系列 ——
         if s.contains("bolt") || s.contains("charging") { return "bolt" }
         if s.contains("plug") { return "plug" }
 
         // —— 计时与效率系列 ——
-        if s.contains("tomato") || s.contains("pomodoro") { return "tomato" }
         if s.contains("stopwatch") { return "stopwatch" }
         if s.contains("alarm") { return "alarm" }
         if s.contains("hourglass") || s.contains("clock") { return "hourglass" }
@@ -145,6 +141,12 @@ struct AtollCuteIcon: View {
                 accent: accent,
                 secondary: secondary
             )
+        } else if s.contains("walk") || s.contains("stand") || s.contains("move") || s.contains("figure") || s.contains("break") || s.contains("stretch") {
+            StandBreak3DMascot(size: size)
+        } else if s.contains("water") || s.contains("drop") || s.contains("drink") {
+            WaterDrop3DMascot(size: size)
+        } else if s.contains("tomato") || s.contains("pomodoro") {
+            PomodoroTomato3DMascot(size: size)
         } else {
             let assetName = AtollCuteIconAssets.assetName(for: symbolName)
             let bounce: CGFloat = animated ? (isLifted ? 1.05 : 0.98) : 1.0

@@ -120,7 +120,7 @@ public enum ReactionAnimationKind: String, CaseIterable, Identifiable {
         case .timer: return "stopwatch"          // 72 帧
         case .cloud: return "cloud"              // 72 帧
         case .coffee, .water: return "coffee"    // 72 帧
-        case .move: return "notice-move"         // 运动帧
+        case .move: return nil                   // 走 3D 拟态迈步小萌宠动效 (StandBreak3DMascot)
         case .bell: return "bell"                // 静帧
         case .chart: return "chart"              // 静帧
         case .mochi: return "partying"           // 73 帧
@@ -493,16 +493,22 @@ public struct AtollReactionGlyphView: View {
                     .opacity(kind.atollShowsOrbit ? 0.36 + 0.34 * shimmer : 0)
             }
 
-            Image.cuteSymbol(kind.atollSymbol)
-                .font(.system(size: size * kind.atollSymbolScale, weight: .semibold, design: .rounded))
-                .symbolRenderingMode(.hierarchical)
-                .foregroundStyle(
-                    LinearGradient(colors: [Color.white, palette.secondary.opacity(0.92)], startPoint: .top, endPoint: .bottom)
-                )
-                .shadow(color: palette.primary.opacity(0.55), radius: size * 0.09)
-                .rotationEffect(.degrees(kind.atollRotation(phase: t)))
-                .offset(y: kind.atollSymbolYOffset * size)
-                .scaleEffect(pulse)
+            if kind == .move {
+                StandBreak3DMascot(size: size)
+            } else if kind == .water {
+                WaterDrop3DMascot(size: size)
+            } else {
+                Image(systemName: kind.atollSymbol)
+                    .font(.system(size: size * kind.atollSymbolScale, weight: .semibold, design: .rounded))
+                    .symbolRenderingMode(.hierarchical)
+                    .foregroundStyle(
+                        LinearGradient(colors: [Color.white, palette.secondary.opacity(0.92)], startPoint: .top, endPoint: .bottom)
+                    )
+                    .shadow(color: palette.primary.opacity(0.55), radius: size * 0.09)
+                    .rotationEffect(.degrees(kind.atollRotation(phase: t)))
+                    .offset(y: kind.atollSymbolYOffset * size)
+                    .scaleEffect(pulse)
+            }
         }
         .frame(width: size, height: size)
         .contentShape(RoundedRectangle(cornerRadius: hitRadius, style: .continuous))
